@@ -6,7 +6,7 @@ import '../App.css';
 
 const DashboardPage = () => {
   const [featuredHeroes, setFeaturedHeroes] = useState([]);
-  const { heroes } = useContext(GlobalContext);
+  const { heroes } = useContext(GlobalContext); 
 
   useEffect(() => {
     let featured = heroes.filter(hero => hero.featured);
